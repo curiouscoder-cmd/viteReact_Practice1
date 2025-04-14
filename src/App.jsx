@@ -4,6 +4,7 @@ import Counter from './Components/counter';
 import Something from './Components/something';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import About from './Components/About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <TextForm heading="Enter the text to analyze" />
     <Counter />
     <Something />
+    <About />
    </div>
    </>
   );

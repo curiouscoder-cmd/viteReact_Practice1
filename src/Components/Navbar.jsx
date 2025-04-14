@@ -14,7 +14,7 @@ export default function Navbar(props) {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">{props.aboutText}</a>
+          <a className="nav-link" href="/">About</a>
         </li>
         <li className="nav-item">
           <a className="https://google.com" aria-disabled="true">Disabled</a>

@@ -19,6 +19,12 @@ export default function TextForm(props) {
         setText('');
     }
 
+    const handleHideClick = () => {
+        console.log("text hided" );
+        let newTEXT = '.'.repeat(text.length);
+        setText('.'.repeat(text.length));
+    }
+
     const handleOnChange = (event) => {
         console.log("On change");
         setText(event.target.value);
@@ -35,6 +41,7 @@ const [text, setText] = useState("");
 <button className='btn btn-primary mx-1' onClick={handleUpClick}>Convert to Uppercase</button>
 <button className='btn btn-primary mx-1' onClick={handleLoClick}>Convert to Lowercase</button>
 <button className='btn btn-primary mx-1' onClick={handleClearClick}>Clear Text</button>
+<button className='btn btn-primary mx-1' onClick={handleHideClick}>Hide Text</button>
 </div>
 <div className="container my-3">
     <h2>Your Text summary</h2>
